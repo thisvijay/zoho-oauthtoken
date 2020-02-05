@@ -3,7 +3,7 @@ Simple Zoho OAuthtoken oauthtoken creation for ( also supports JAVAScript CORS A
 
 Demo / Sample :
 
-https://thisvijay.github.io/zoho-oauthtoken/one-step
+https://thisvijay.github.io/zoho-oauthtoken/simple
 
 https://thisvijay.github.io/zoho-oauthtoken/client-guide
 
