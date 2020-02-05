@@ -2,7 +2,7 @@
 
 let clientId    = '1000.XW4A2RAUWKKQ05215BO6PRCXYAU6XJ';                                       //YOUR CLIENT ID
 let scope       = `Desk.tickets.ALL,Desk.basic.ALL`;                                           //YOUR SCOPES 
-let redirectUri = 'https://thisvijay.github.io/zoho-oauthtoken/internal/redirect.html'; //YOUR REDIRECT URL 
+let redirectUri = 'https://thisvijay.github.io/zoho-oauthtoken/simple/redirect.html'; //YOUR REDIRECT URL 
 let oauthDomain = 'https://accounts.zoho.com';
 
 let scopesHistory = [];
