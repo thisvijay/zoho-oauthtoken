@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zoho OAuth for JavaScript & CORS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .page{
+                margin:7% 20%;
+            }
+            .form-item{
+                margin-bottom : 25px;
+            }
+            .form-label{
+                font-size:25px;
+                color:darkcyan;
+                margin-bottom:5px;
+            }
+            .form-input input{
+                padding: 7px 10px;
+                font-size:18px;
+                width:75%;
+                border:1px solid black;
+                border-width : 0px 0px 2px 0px;
+            }
+            button{
+                padding : 7px 15px;
+                border-radius : 5px;
+                background-color: darkcyan;
+                color:white;
+                font-size : 14px;
+                cursor:pointer;
+            }
+            #oauthtoken{
+                border :  2px dotted darkcyan;
+                padding: 5px 15px;
+                font-size:27px;
+                color:darkcyan;
+            }
+            .form-result{
+                font-size:18px;
+                margin-top: 75px;
+                color:crimson;
+            }
+            img {
+                max-width:100%;
+            }
+
+        </style>
+        <script type="text/javascript" src="deskClientOAuth.js"></script>
+    </head>
+    <body>
+        <div class="page">
+        <form>
+            <h1>Zoho OAuth for JavaScript & CORS</h1>
+            
+            <i class="important">You must have chosen <b>"Client Type"</b> as <b>"Java Script"</b> while creating client <a href="#sample-image">as mentioned in  below image</a></i>
+            <br><br><br><br>
+            <div class="form-item">
+                <div class="form-label">
+                    Client Id 
+                </div>
+                <div class="form-input">
+                    <input required id="client_id" type="text" value="1000.AZG38NQ6SL1M93609QWWNTX31S8M54" placeholder="Client Id from https://accounts.zoho.com/developerconsole"/>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="form-label">
+                    Scope <i>(Seperated by comma)</i>
+                </div>
+                <div class="form-input">
+                    <input required id="scopes" type="text" value="Desk.tickets.ALL,Desk.settings.ALL,Desk.search.READ,Desk.basic.READ" placeholder="example : Desk.tickets.ALL,Desk.tasks.ALL,Desk.settings.ALL,Desk.events.ALL,Desk.search.READ..."/>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="form-label">
+                    Redirect URI
+                </div>
+                <div class="form-input">
+                    <input required id="redirect_uri" type="text" value="https://zohodesk-extension.herokuapp.com/desk-js-oauth-cors/redirect.html" placeholder="Redirect URI from https://accounts.zoho.com/developerconsole"/>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="form-input">
+                    <button type="submit" onclick="initiateAuthroizeFromInput(event)">
+                        Get OAuth token
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="form-result">
+            <span>OAuth Token</span> <br> <br>  <b id="oauthtoken"></b>
+        </div>
+        </div>
+        
+        <div class="sample" id="sample-image">
+            <h1>Step 1: <a href="https://accounts.zoho.com/developerconsole" target="_blank">Add Client ID</a></h1>
+            <img src="console-sample.png" alt="developer console sample"/>
+        </div>
+        
+    </body>
+</html>

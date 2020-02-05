@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generate ZOHO OAuthToken in single step</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <meta name="description" content="Create OAuth token for Zoho in One Step. github/thisvijay">
+        <style>
+            .page{
+                margin:7% 20%;
+            }
+            .form-item{
+                margin-bottom : 25px;
+            }
+            .form-label{
+                font-size:25px;
+                color:darkcyan;
+                margin-bottom:5px;
+            }
+            .form-input input[type ="text"]{
+                padding: 7px 10px;
+                font-size:18px;
+                width:75%;
+                border:1px solid black;
+                border-width : 0px 0px 2px 0px;
+            }
+            button{
+                padding : 7px 15px;
+                border-radius : 5px;
+                background-color: #2196F3;
+                color:white;
+                font-size : 14px;
+                cursor:pointer;
+                box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+            }
+            #oauthtoken{
+                border :  2px dotted darkcyan;
+                padding: 5px 15px;
+                font-size:27px;
+                color:darkcyan;
+            }
+            .form-result{
+                font-size:18px;
+                margin-top: 75px;
+                color:crimson;
+            }
+            .appserver-btn{
+                margin: 15px;
+                font-family: Arial;
+            }
+            h1{
+                font-weight: normal;
+                font-family: Palatino;
+                font-size: 50px;
+            }
+            .appserver-btn:hover, label:hover, input[type="radio"]{
+                cursor: pointer;
+                color: navy;
+            }
+            .form-label i{
+                color: silver;
+            }
+            .author{
+                float: right;
+            }
+        </style>
+        <script type="text/javascript" src="./deskClientOAuth.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <form>
+                <h1>Zoho OAuth Token</h1>
+                <br><br>
+                <div class="form-item">
+                    <div class="form-label">
+                        Scope <i>(Seperated by comma)</i>
+                    </div>
+                    <div class="form-input">
+                        <input required id="scopes" type="text" value="Desk.tickets.ALL,Desk.settings.ALL,Desk.search.READ,Desk.basic.READ" placeholder="example : Desk.tickets.ALL,Desk.tasks.ALL,Desk.settings.ALL,Desk.events.ALL,Desk.search.READ..."/>
+                        <button type="submit" onclick="initiateAuthorize(event)">
+                            Get OAuth token
+                        </button>
+                    </div>
+                </div>
+                <!--<div class="form-item">
+                    <div class="form-label">
+                        Server Type
+                    </div>
+                    <div class="form-input">
+                        <div class="appserver-btn">
+                            <input checked type="radio" name="appserver" id="zoholive" onclick="selectAppServer('live')"/> <label for="zoholive"> Zoho Live </label>
+                        </div>
+                        <div class="appserver-btn">
+                            <input type="radio" name="appserver" id="zoholocal" onclick="selectAppServer('local')"/> <label for="zoholocal"> Zoho Local (localzoho.com) </label>
+                        </div>
+                        <div class="appserver-btn">
+                            <input type="radio" name="appserver" id="zohodev" onclick="selectAppServer('dev')"/> <label for="zohodev"> Zoho Development (csez.zohocorpin.com) </label>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="form-item">
+                    <div class="form-input">
+                        
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-result">
+                <span>OAuth Token</span> <br> <br>  <b id="oauthtoken">To be generated...</b>
+            </div>
+        </div>
+        <div class="author">
+            <a href="https://github.com/thisvijay">github/thisvijay</a>
+        </div>
+    </body>
+</html>
