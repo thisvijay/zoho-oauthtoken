@@ -2,7 +2,7 @@
 
 let clientId    = '1000.AZG38NQ6SL1M93609QWWNTX31S8M54';                                       //YOUR CLIENT ID
 let scope       = `Desk.tickets.ALL,Desk.basic.ALL`;                                           //YOUR SCOPES 
-let redirectUri = 'https://zoho-opensource.herokuapp.com/desk-js-oauth-cors/redirect.html'; //YOUR REDIRECT URL 
+let redirectUri = 'https://thisvijay.github.io/zoho-oauthtoken/client-guide/redirect.html'; //YOUR REDIRECT URL 
 let oauthDomain = 'https://accounts.zoho.com';
 
 let callback_after_authorize = (function(generatedOauthToken){
@@ -60,7 +60,7 @@ function initiateAuthorize(){
 }
 
 (function() {
-    if (location.href.indexOf('http://zoho-opensource.herokuapp.com')===0) {
+    if (location.href.indexOf('https://thisvijay.github.io')===0) {
         location.protocol = "https:";
     }
 })();
