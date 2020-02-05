@@ -92,12 +92,6 @@ function initiateAuthorize(e){
     );
 }
 
-(function() {
-    if (location.href.indexOf('https://thisvijay.github.io')===0) {
-        location.protocol = "https:";
-    }
-})();
-
 function syncScopesForAutoFill(){
     window.localStorage.setItem("last_scope", document.getElementById("scopes").value.trim());
 }

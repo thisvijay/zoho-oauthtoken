@@ -84,12 +84,6 @@ function initiateAuthorize(e){
     );
 }
 
-(function() {
-    if (location.href.indexOf('https://thisvijay.github.io')===0) {
-        location.protocol = "https:";
-    }
-})();
-
 function getParameterByName(name, hash) {
     let match = RegExp(`[#&]${name}=([^&]*)`).exec(hash);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
