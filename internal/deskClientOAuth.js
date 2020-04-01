@@ -16,8 +16,12 @@ var clientConfig = {
        "clientId" : '1000.O2PAIXXPJPRB00906JV3O4EANCX0D9',
        "domain"   : 'https://accounts.localzoho.com'
    },
-   "dev": {
+   "dev_old": {
        "clientId" : '1000.AMN31L2YFY7T24662IZKBUR9U2JOT6',
+       "domain"   : 'https://accounts-old.csez.zohocorpin.com'
+   },
+   "dev": {
+       "clientId" : '1000.35WBAC8H4D5QCLKJ9MKFNKSJD62U7H',
        "domain"   : 'https://accounts.csez.zohocorpin.com'
    }
 };
