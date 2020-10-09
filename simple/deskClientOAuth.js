@@ -7,7 +7,7 @@ let oauthDomain = 'https://accounts.zoho.com';
 
 var clientConfig = {
    "live" : {
-       "clientId" : '1000.XW4A2RAUWKKQ05215BO6PRCXYAU6XJ',
+       "clientId" : '1000.1IOS3E7KA8K77RBCKPYA8NY8QAMF2C',
        "domain"   : 'https://accounts.zoho.com'
    },
    "local": {
