@@ -1,6 +1,6 @@
 /******** replace below values with your own     ********/
 
-let clientId    = '1000.XW4A2RAUWKKQ05215BO6PRCXYAU6XJ';                                       //YOUR CLIENT ID
+let clientId    = '1000.1IOS3E7KA8K77RBCKPYA8NY8QAMF2C';                                       //YOUR CLIENT ID
 let scope       = `Desk.tickets.ALL,Desk.basic.ALL`;                                           //YOUR SCOPES 
 let redirectUri = 'https://thisvijay.github.io/zoho-oauthtoken/simple/redirect.html'; //YOUR REDIRECT URL 
 let oauthDomain = 'https://accounts.zoho.com';
